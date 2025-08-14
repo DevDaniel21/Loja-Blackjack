@@ -1,0 +1,57 @@
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.topo picture {
+    max-width: 120px;
+}
+
+.topo nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.topo nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f5deb5;
+    position: relative;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.topo nav a:is(:hover, :focus) {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .topo picture {
+        max-width: 80px;
+        margin-bottom: 0;
+    }
+
+    .topo nav a {
+        font-size: 12px;
+        
+    }
+}
