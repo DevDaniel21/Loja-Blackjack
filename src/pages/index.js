@@ -2,6 +2,7 @@ import Head from "next/head";
 import estilos from "@/styles/Home.module.css";
 import Topo from "@/components/Topo"
 import Capa from "@/components/Capa"
+import Produtos from "@/components/Produtos";
 
 
 export default function Home() {
@@ -16,6 +17,10 @@ export default function Home() {
       <Topo />
       <section>
         <Capa />
+      </section>
+
+      <section>
+        <Produtos />
       </section>
     </>
   );
